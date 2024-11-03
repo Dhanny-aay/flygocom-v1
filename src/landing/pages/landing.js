@@ -38,7 +38,7 @@ const Landing = () => {
       <Navbar />
       <Hero />
       {/* Unlock Rewards */}
-      <div className=" w-full py-16 md:px-12 px-5 md:mt-44 mt-[550px] flex flex-col items-center">
+      <div className=" w-full py-16 md:px-12 px-5 md:mt-44 flex flex-col items-center">
         <div className=" flex items-center space-x-6">
           <img src={coupon} alt="coupon" className="" />
           <span className=" flex flex-col">
@@ -61,7 +61,7 @@ const Landing = () => {
 
                   backgroundSize: "cover",
                 }}
-                className=" bg-white h-[100px] w-[250px] md:w-auto md:h-[260px] rounded-[10px] shadow-sm"
+                className=" bg-white h-[150px] w-[250px] md:w-auto md:h-[260px] rounded-[10px] shadow-sm"
               >
                 <div className=" w-[150px] md:w-[230px] h-full relative">
                   <div className=" bottom-3 px-3 absolute w-full">

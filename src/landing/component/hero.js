@@ -41,7 +41,7 @@ const Hero = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className=" h-[700px] md:h-[500px] relative w-full flex justify-center items-center flex-col px-5"
+        className=" h-[600px] md:h-[500px] relative w-full flex justify-center items-center flex-col px-5"
       >
         <div className=" mt-8 w-full rounded-xl md:max-w-[640px] py-5 px-3 md:px-0 bg-[#0000004D] flex-col items-center justify-center flex text-center">
           <h1 className=" font-LatoBold  font-extrabold text-3xl md:text-[40px] text-white">
@@ -60,7 +60,7 @@ const Hero = () => {
           <button className=" w-2 h-2 rounded-full bg-[#fff]"></button>
         </div>
 
-        <div class="w-full md:px-12 px-5 absolute top-[650px]  md:absolute md:top-[425px] md:left-[50%] md:translate-x-[-50%]">
+        <div class="w-full md:px-12 px-5 absolute hidden md:block  md:absolute md:top-[425px] md:left-[50%] md:translate-x-[-50%]">
           {/* child component goes here  */}
           <div className=" w-full bg-white min-h-[257px] rounded-xl bg border border-[#EAEBF0] relative p-4 md:mt-0">
             <img src={comvex} className=" absolute right-0 z-10 top-0" alt="" />
@@ -105,6 +105,53 @@ const Hero = () => {
                 return null;
               })}
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* for mobile */}
+      <div class="w-full md:px-12 px-5 block md:hidden mt-6  md:absolute md:top-[425px] md:left-[50%] md:translate-x-[-50%]">
+        {/* child component goes here  */}
+        <div className=" w-full bg-white min-h-[257px] rounded-xl bg border border-[#EAEBF0] relative p-4 md:mt-0">
+          <img src={comvex} className=" absolute right-0 z-10 top-0" alt="" />
+          <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 z-20">
+            {buttons.map((button, index) => (
+              <button
+                key={index}
+                className={`py-3 md:px-12 px-5 rounded-[5px] flex items-center justify-center z-20 space-x-[10px] ${
+                  activeButton === button.name
+                    ? "bg-gradient-to-b from-[#31C2FF] to-[#1989F2]"
+                    : "bg-[#F5F5F5]"
+                }`}
+                onClick={() => handleClick(button.name)}
+              >
+                <img
+                  src={
+                    activeButton === button.name ? button.activeImg : button.img
+                  }
+                  alt=""
+                />
+                <p
+                  className={`font-Roboto font-medium text-base ${
+                    activeButton === button.name
+                      ? "text-[#FBFDFFFE]"
+                      : "text-[#11305A]"
+                  }`}
+                >
+                  {button.name}
+                </p>
+              </button>
+            ))}
+          </div>
+
+          <div className=" mt-6 flex flex-col justify-center items-center w-full h-full z-20">
+            {/* Render the component based on the active button */}
+            {buttons.map((button, index) => {
+              if (button.name === activeButton) {
+                return button.comp;
+              }
+              return null;
+            })}
           </div>
         </div>
       </div>
