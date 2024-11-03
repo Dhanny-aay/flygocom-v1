@@ -10,7 +10,7 @@ const StayTab = () => {
   };
 
   return (
-    <>
+    <div className=" z-20">
       <div className=" w-full flex items-center space-x-4">
         <label className=" flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
           Choose Trip Type
@@ -36,7 +36,7 @@ const StayTab = () => {
         </label>
       </div>
 
-      <div className=" w-full grid grid-cols-4 gap-3 items-center mt-5">
+      <div className=" w-full grid grid-cols-1 md:grid-cols-4 gap-3 items-center mt-5">
         <span className=" w-full relative">
           <input
             type="text"
@@ -74,7 +74,7 @@ const StayTab = () => {
           Search
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -94,13 +94,13 @@ const FlightDeals = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className=" h-[500px] relative w-full flex justify-center items-center flex-col"
+        className=" h-[600px] md:h-[500px] relative w-full flex justify-center items-center flex-col px-5"
       >
-        <div className=" mt-8 w-full rounded-xl max-w-[640px] py-5 bg-[#0000004D] flex-col items-center justify-center flex text-center">
-          <h1 className=" font-LatoBold  font-extrabold text-[40px] text-white">
+        <div className=" mt-8 w-full rounded-xl max-w-[640px] py-5 px-3 md:px-0  bg-[#0000004D] flex-col items-center justify-center flex text-center">
+          <h1 className=" font-LatoBold  font-extrabold text-3xl md:text-[40px] text-white">
             Memorable Travel Experience
           </h1>
-          <p className=" mt-3 text-xl font-Roboto font-normal text-white md:max-w-[500px]">
+          <p className=" mt-3 text-base md:text-xl font-Roboto font-normal text-white md:max-w-[500px]">
             Find amazing Vacation & Holiday packages from all over the world.
           </p>
           <button className=" mt-3 flex items-center space-x-3 py-3 px-6 bg-[#1A8AF3] rounded-[5px] font-Roboto font-bold text-base text-white">
@@ -111,14 +111,14 @@ const FlightDeals = () => {
       </div>
 
       {/* discover weekly */}
-      <div className="w-full py-16 px-12 flex flex-col items-center">
-        <p className=" font-LatoBold font-bold text-black text-center text-[28px]">
+      <div className="w-full py-16 md:px-12 px-5 flex flex-col items-center">
+        <p className=" font-LatoBold font-bold text-black text-center text-2xl md:text-[28px]">
           Discover Weekly Deals on Travel Packages
         </p>
-        <p className=" font-Roboto font-normal text-base text-black mt-2">
+        <p className=" font-Roboto font-normal text-sm md:text-base text-center text-black mt-2">
           Enjoy discounted trips and special offers
         </p>
-        <div className=" w-full grid-cols-3 grid mt-8 gap-6">
+        <div className=" w-full grid-cols-1 md:grid-cols-3 grid mt-8 gap-6">
           {deals.map((item, index) => (
             <div
               key={index}
@@ -133,21 +133,21 @@ const FlightDeals = () => {
                 className=" w-full h-[230px] rounded-t-[15px]"
               ></div>
               <div className=" w-full p-6">
-                <p className=" font-LatoBold font-bold text-2xl text-black">
+                <p className=" font-LatoBold font-bold text-lg md:text-2xl text-black">
                   {item.name}
                 </p>
                 <span className=" flex items-center space-x-3 mt-3">
                   <img src={loca} alt="" />
-                  <p className=" font-Roboto font-normal text-base text-black">
+                  <p className=" font-Roboto font-normal text-sm md:text-base text-black">
                     {item.place}
                   </p>
                 </span>
 
                 <div className=" flex items-center justify-between mt-3">
-                  <p className=" text-black font-LatoBold font-bold text-[28px]">
+                  <p className=" text-black font-LatoBold font-bold text-xl md:text-[28px]">
                     {item.price}
                   </p>
-                  <button className="bg-gradient-to-b from-[#37B3FF] to-[#0081FE] py-[11px] px-7 rounded-[10px] font-Roboto font-semibold text-xl text-white mt-3">
+                  <button className="bg-gradient-to-b from-[#37B3FF] to-[#0081FE] py-[11px] px-7 rounded-[10px] font-Roboto font-semibold text-base md:text-xl text-white mt-3">
                     Explore
                   </button>
                 </div>
@@ -155,21 +155,21 @@ const FlightDeals = () => {
             </div>
           ))}
         </div>
-        <button className=" mx-auto block mt-8 border border-[#0C77DC] text-[#0C77DC] font-LatoRegular font-semibold text-lg rounded-[8px] w-[200px] py-4">
+        <button className=" mx-auto block mt-8 border border-[#0C77DC] text-[#0C77DC] font-LatoRegular font-semibold text-base md:text-lg rounded-[8px] w-[200px] py-4">
           View more
         </button>
       </div>
 
       {/* why choose us */}
-      <div className="w-full py-16 px-12 flex flex-col items-center">
-        <p className=" font-LatoBold font-bold text-black text-center text-[28px]">
+      <div className="w-full py-16 md:px-12 px-5 flex flex-col items-center">
+        <p className=" font-LatoBold font-bold text-black text-center text-2xl md:text-[28px]">
           Why Choose Us
         </p>
-        <p className=" font-Roboto font-normal text-base text-black mt-2">
+        <p className=" font-Roboto font-normal text-sm md:text-base text-center text-black mt-2">
           Our legacy of excellence is a key reason why people choose us, but
           here are a few more.
         </p>
-        <div className=" w-full mt-8 grid grid-cols-3 gap-6">
+        <div className=" w-full mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           {choice.map((item, index) => (
             <div
               key={index}

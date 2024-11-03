@@ -13,30 +13,30 @@ const Deals = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
-          className=" w-full h-[500px] flex flex-col items-center justify-center"
+          className=" w-full h-[500px] flex flex-col items-center justify-center px-5"
         >
-          <p className=" font-PoppinsBold font-bold text-white text-center text-[40px]">
+          <p className=" font-PoppinsBold font-bold text-white text-center text-3xl md:text-[40px]">
             Join Our Travel Community
           </p>
-          <p className=" font-LatoBold font-bold text-xl text-white after:mt-3">
+          <p className=" font-LatoBold font-bold text-base md:text-xl text-center text-white after:mt-3">
             Join thousands of travelers on the next trip. Sign up to join the
             train.
           </p>
           <Link
             to="/travel-community"
-            className=" py-6 w-[250px] bg-[#F36F1A] rounded-[20px] mt-6 text-center font-Roboto font-semibold text-base text-white"
+            className=" py-4 md:py-6 px-6 md:w-[250px] bg-[#F36F1A] rounded-[20px] mt-6 text-center font-Roboto font-semibold text-base text-white"
           >
             Join now
           </Link>
         </div>
-        <div className=" bg-[#1F3E68] py-16 w-full px-12">
-          <p className=" text-center text-white font-PoppinsBold font-bold text-[34px]">
+        <div className=" bg-[#1F3E68] py-16 w-full md:px-12 px-5">
+          <p className=" text-center text-white font-PoppinsBold font-bold text-3xl md:text-[34px]">
             Exclusive Flight Deals Just for You
           </p>
           <p className=" text-center mt-2 font-normal text-base font-Roboto text-white">
             Enjoy discounted trips and special offers
           </p>
-          <div className=" w-full mt-8 grid grid-cols-4 gap-6">
+          <div className=" w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div
               style={{
                 boxShadow: "-4px -4px 10px 0px #1111111A",

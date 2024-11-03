@@ -44,10 +44,10 @@ const FlightTab = () => {
 
   return (
     <>
-      <div className=" w-full flex items-center space-x-6">
-        <label className=" flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
+      <div className=" w-full flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0 z-20">
+        <label className=" w-full md:w-auto flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
           Choose Trip Type
-          <span className=" mt-2 border border-[#D7D7D7] px-4 py-[14px] w-[150px]  rounded-[5px]">
+          <span className=" mt-2 border border-[#D7D7D7] px-4 py-[14px] w-full md:w-[150px]  rounded-[5px]">
             <select
               className=" text-[#000000B2] font-Roboto font-normal text-sm w-full"
               value={tripType}
@@ -60,10 +60,10 @@ const FlightTab = () => {
           </span>
         </label>
 
-        <label className=" flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
+        <label className=" w-full md:w-auto flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
           Class
-          <span className=" mt-2 border border-[#D7D7D7] px-4 py-[14px] w-[150px]  rounded-[5px]">
-            <select className="text-[#000000B2] font-Roboto font-normal text-sm w-ful">
+          <span className=" mt-2 border border-[#D7D7D7] px-4 py-[14px] w-full md:w-[150px]  rounded-[5px]">
+            <select className="text-[#000000B2] font-Roboto font-normal text-sm w-full">
               <option value="Economy">Economy</option>
               <option value="firstclass">First Class</option>
               <option value="bizclass">Buisness Class</option>
@@ -71,13 +71,13 @@ const FlightTab = () => {
           </span>
         </label>
 
-        <div className=" relative">
+        <div className=" w-full md:w-auto relative">
           {/* Button for passengers */}
-          <label className=" flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
+          <label className=" w-full md:w-auto flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
             Passenger
             <div
               onClick={toggleSelectPassenger}
-              className=" px-4 text-center w-[150px] mt-2 flex items-center justify-between py-[14px] rounded-[5px] bg-white border border-[#D7D7D7] text-[#000000B2] font-normal text-base"
+              className=" px-4 text-center w-full md:w-[150px] mt-2 flex items-center justify-between py-[14px] rounded-[5px] bg-white border border-[#D7D7D7] text-[#000000B2] font-normal text-base"
             >
               {/* Show total only if selectPassenger is true */}
               <p>{totalPassengers}</p>
@@ -87,7 +87,7 @@ const FlightTab = () => {
 
           {/* Passenger dropdown */}
           {selectPassenger && (
-            <div className=" absolute top-10 left-[50px] z-50 w-[250px] p-6 rounded-2xl bg-[#f8f8f8] space-y-6 flex flex-col">
+            <div className=" absolute top-10 left-[50px] z-50 w-[250px] p-6 rounded-2xl bg-[#f8f8f8] space-y-6  flex flex-col">
               {/* Adults */}
               <div className="flex flex-row items-center justify-between">
                 <span>
@@ -189,8 +189,8 @@ const FlightTab = () => {
       {/* Render inputs only if tripType is not 'multiCity' */}
       {tripType !== "multiCity" && (
         <div
-          className={`w-full grid gap-3 mt-5 z-20 items-center ${
-            tripType === "roundTrip" ? "grid-cols-5" : "grid-cols-4"
+          className={`w-full grid gap-3 mt-5 z-20 grid-cols-2 items-center ${
+            tripType === "roundTrip" ? "md:grid-cols-5" : "md:grid-cols-4"
           }`}
         >
           <span className=" w-full relative">

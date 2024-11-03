@@ -7,7 +7,7 @@ const JoinGroup = ({ setJoinGroup }) => {
         <div className="md:ml-[20%] h-[500px] bg-[#FFFFFF] p-6 rounded-[15px] w-full md:w-[600px]">
           <div className="w-full h-full bg-[#fff] overflow-auto">
             <span className=" w-full flex items-center justify-between">
-              <p className=" text-2xl text-[#272D37] font-bold mt-6 font-LatoBold">
+              <p className=" text-xl md:text-2xl text-[#272D37] font-bold mt-6 font-LatoBold">
                 Paris Summer Crew
               </p>
               <img
@@ -22,7 +22,7 @@ const JoinGroup = ({ setJoinGroup }) => {
             <p className=" font-normal font-Roboto text-sm text-[#11305A]">
               Raymond started this community
             </p>
-            <div className=" flex items-center justify-between mt-2">
+            <div className=" flex flex-col md:flex-row space-y-3 md:space-y-0 md:items-center justify-between mt-2">
               <p className=" text-[#082F49B2] font-Roboto font-normal text-sm">
                 8 people have joined.
               </p>

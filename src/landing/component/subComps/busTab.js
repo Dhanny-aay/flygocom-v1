@@ -13,8 +13,8 @@ const BusTab = () => {
   };
 
   return (
-    <>
-      <div className=" w-full flex items-center space-x-4">
+    <div className=" z-20">
+      <div className=" w-full flex items-center space-x-4 ">
         <label className=" flex flex-col font-Roboto font-normal text-[#11305A] text-sm">
           Choose Trip Type
           <span className=" mt-2 border border-[#D7D7D7] px-4 py-[14px] w-[150px]  rounded-[5px]">
@@ -40,8 +40,8 @@ const BusTab = () => {
       </div>
 
       <div
-        className={`w-full grid gap-3 mt-5 z-20 items-center ${
-          tripType === "charterBus" ? "grid-cols-5" : "grid-cols-4"
+        className={`w-full grid gap-3 grid-cols-1 mt-5 z-20 items-center ${
+          tripType === "charterBus" ? "md:grid-cols-5" : "md:grid-cols-4"
         }`}
       >
         <span className=" w-full relative">
@@ -129,7 +129,7 @@ const BusTab = () => {
           Search
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

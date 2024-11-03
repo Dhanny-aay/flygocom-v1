@@ -7,7 +7,7 @@ const ErrorMsg = () => {
     <>
       <div className=" w-full bg-[#f1f1f1]">
         <Navbar />
-        <div className=" min-h-[100svh] mt-20 w-full py-16 px-12 bg-[#f1f1f1] flex flex-col items-center justify-center">
+        <div className=" min-h-[100svh] mt-20 w-full py-16 md:px-12 px-5 bg-[#f1f1f1] flex flex-col items-center justify-center">
           <img src={noSearch} alt="" />
           <h2 className=" mt-11 text-center font-LatoBold font-extrabold text-[#082F49B2] text-[30px]">
             Your search is currently unavailable
@@ -18,8 +18,8 @@ const ErrorMsg = () => {
             search to generate better results.
           </p>
 
-          <div className=" bg-[#FFFFFF] md:w-[900px] flex items-center justify-between w-full py-4 px-10 mt-16">
-            <p className=" text-[#11305A] font-LatoRegular font-semibold text-lg">
+          <div className=" bg-[#FFFFFF] md:w-[900px] flex flex-col md:flex-row space-y-4 md:space-y-0 items-center justify-between w-full py-4 px-10 mt-16">
+            <p className=" text-[#11305A] font-LatoRegular font-semibold text-lg text-center md:text-left">
               Can’t find your what you’re looking for?{" "}
               <span className=" text-[#0C77DC]">Call</span> or reach out to us
               on Whatsapp

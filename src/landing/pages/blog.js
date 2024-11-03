@@ -45,9 +45,9 @@ const Blog = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-20 w-full py-16 px-12 bg-[#f1f1f1]">
-        <div className=" w-full flex items-center justify-between">
-          <div className="w-[67%] relative">
+      <div className="mt-20 w-full py-16 md:px-12 px-5 bg-[#f1f1f1]">
+        <div className=" w-full flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+          <div className="w-full md:w-[67%] relative">
             <input
               type="text"
               className=" w-full pl-14 pr-6 py-5 rounded-[40px]"
@@ -57,31 +57,31 @@ const Blog = () => {
             />
             <img src={search} className=" absolute left-6 top-5" alt="" />
           </div>
-          <div className=" flex items-center justify-around w-[30%]">
-            <Link className=" font-LatoRegular font-semibold text-lg text-[#082F49B2]">
+          <div className=" flex items-center justify-around w-full md:w-[30%]">
+            <Link className=" font-LatoRegular font-semibold text-base md:text-lg text-[#082F49B2]">
               TRAVEL
             </Link>
-            <Link className=" font-LatoRegular font-semibold text-lg text-[#082F49B2]">
+            <Link className=" font-LatoRegular font-semibold text-base md:text-lg text-[#082F49B2]">
               TOURS
             </Link>
-            <Link className=" font-LatoRegular font-semibold text-lg text-[#082F49B2]">
+            <Link className=" font-LatoRegular font-semibold text-base md:text-lg text-[#082F49B2]">
               VISA
             </Link>
-            <Link className=" font-LatoRegular font-semibold text-lg text-[#082F49B2]">
+            <Link className=" font-LatoRegular font-semibold text-base md:text-lg text-[#082F49B2]">
               OTHERS
             </Link>
           </div>
         </div>
 
-        <div className=" grid grid-cols-3 mt-12 gap-6">
+        <div className=" grid  grid-cols-1 md:grid-cols-3 mt-12 gap-6">
           {/* Top Reads */}
           <div className=" w-full p-5 bg-white">
             <p className=" text-[#11305A] font-Roboto font-medium text-2xl">
               Top Reads
             </p>
-            <div className=" w-full mt-11 flex flex-col space-y-4">
+            <div className=" w-full mt-4 md:mt-11 flex flex-col space-y-4">
               <div className=" py-4 border-b border-[#B5B5B5]">
-                <p className=" text-[#11305A] font-LatoRegular font-medium text-xl">
+                <p className=" text-[#11305A] font-LatoRegular font-medium text-lg md:text-xl">
                   7 Countries you can travel to without Visa
                 </p>
                 <span className=" flex items-center space-x-5 mt-2">
@@ -94,7 +94,7 @@ const Blog = () => {
                 </span>
               </div>
               <div className=" py-4 border-b border-[#B5B5B5]">
-                <p className=" text-[#11305A] font-LatoRegular font-medium text-xl">
+                <p className=" text-[#11305A] font-LatoRegular font-medium text-lg md:text-xl">
                   All you need to know about Hiking
                 </p>
                 <span className=" flex items-center space-x-5 mt-2">
@@ -107,7 +107,7 @@ const Blog = () => {
                 </span>
               </div>
               <div className=" py-4 border-b border-[#B5B5B5]">
-                <p className=" text-[#11305A] font-LatoRegular font-medium text-xl">
+                <p className=" text-[#11305A] font-LatoRegular font-medium text-lg md:text-xl">
                   All you need to know about Hiking
                 </p>
                 <span className=" flex items-center space-x-5 mt-2">
@@ -120,7 +120,7 @@ const Blog = () => {
                 </span>
               </div>
               <div className=" py-4 border-b border-[#B5B5B5]">
-                <p className=" text-[#11305A] font-LatoRegular font-medium text-xl">
+                <p className=" text-[#11305A] font-LatoRegular font-medium text-lg md:text-xl">
                   Steps on how to get your Visa
                 </p>
                 <span className=" flex items-center space-x-5 mt-2">
@@ -164,7 +164,7 @@ const Blog = () => {
                     </p>
                   </span>
 
-                  <button className=" border border-[#0074C9] font-LatoRegular font-semibold text-lg text-[#11305A] rounded-[8px] py-3 px-6">
+                  <button className=" border border-[#0074C9] font-LatoRegular font-semibold text-sm md:text-lg text-[#11305A] rounded-[8px] py-3 px-4 md:px-6">
                     Read More
                   </button>
                 </div>
@@ -175,19 +175,19 @@ const Blog = () => {
 
         <div className=" flex items-center justify-center mt-20">
           <div className=" flex items-center space-x-4">
-            <button className=" w-12 h-12 bg-[#11305A] rounded-lg text-white font-LatoRegular font-semibold text-lg">
+            <button className=" w-12 h-12 bg-[#11305A] rounded-lg text-white font-LatoRegular font-semibold text-base md:text-lg">
               1
             </button>
-            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-lg">
+            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-base md:text-lg">
               2
             </button>
-            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-lg">
+            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-base md:text-lg">
               3
             </button>
-            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-lg">
+            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-base md:text-lg">
               4
             </button>
-            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-lg flex items-center justify-center">
+            <button className=" w-12 h-12 bg-[#FFFFFF] rounded-lg text-[#11305A] font-LatoRegular font-semibold text-base md:text-lg flex items-center justify-center">
               <img src={play} alt="" />
             </button>
           </div>

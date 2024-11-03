@@ -5,7 +5,7 @@ const Policy = () => {
   return (
     <>
       <Navbar />
-      <div className=" mt-20 w-full py-16 px-12">
+      <div className=" mt-20 w-full py-16 md:px-12 px-5">
         <p className=" text-[#0C77DC] font-medium font-PoppinsMedium text-[28px]">
           Privacy Policy
         </p>
@@ -62,7 +62,7 @@ const Policy = () => {
         </div>
       </div>
 
-      <div className=" bg-[#f1f1f1] h-[600px] w-full py-16 px-12">
+      {/* <div className=" bg-[#f1f1f1] h-[600px] w-full py-16 md:px-12 px-5">
         <p className=" text-[#11305A] font-LatoBold font-bold text-2xl">
           Subscribe to our Newsletter
         </p>
@@ -81,7 +81,7 @@ const Policy = () => {
             Sign up
           </button>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );

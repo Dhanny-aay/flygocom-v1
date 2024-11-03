@@ -19,7 +19,7 @@ const MultiCityTab = () => {
       flights.push(
         <div
           key={i}
-          className="w-full grid grid-cols-4 gap-3 z-20 items-center mt-5"
+          className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 z-20 items-center mt-5"
         >
           <span className=" w-full relative">
             <input

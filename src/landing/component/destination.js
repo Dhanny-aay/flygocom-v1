@@ -113,11 +113,11 @@ const Destination = () => {
 
   return (
     <>
-      <div className=" w-full py-16 px-12">
-        <p className=" text-center text-[#11305A] font-PoppinsBold font-bold text-[40px]">
+      <div className=" w-full py-16 md:px-12 px-5">
+        <p className=" text-center text-[#11305A] font-PoppinsBold font-bold text-3xl md:text-[40px]">
           Top Destinations
         </p>
-        <div className="flex flex-row justify-center items-center space-x-24 mt-12">
+        <div className="flex flex-row justify-center items-center space-x-3 md:space-x-12 lg:space-x-24 mt-12">
           {continents.map((continent) => (
             <button
               key={continent}
@@ -133,15 +133,17 @@ const Destination = () => {
           ))}
         </div>
 
-        <div className=" w-full grid grid-cols-2 gap-6 mt-12">
+        <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           {filteredDestinations.map((item, index) => (
             <div
               key={index}
               className={`flex justify-between items-center ${
-                index === 1 || index === 3 ? "flex-row-reverse" : ""
+                index === 1 || index === 3
+                  ? " flex-col md:flex-row-reverse"
+                  : " flex-col md:flex-row"
               }`}
             >
-              <p className="w-[49%] text-[#11305A] font-Roboto font-normal text-sm py-7">
+              <p className=" w-full md:w-[49%] text-[#11305A] font-Roboto font-normal text-sm py-4 md:py-7">
                 {item.about}
               </p>
               <div
@@ -149,7 +151,7 @@ const Destination = () => {
                   backgroundImage: `url(${item.image})`,
                   backgroundSize: "cover",
                 }}
-                className="w-[49%] h-full"
+                className=" w-full h-[200px] md:w-[49%] md:h-full"
               ></div>
             </div>
           ))}

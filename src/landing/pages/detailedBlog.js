@@ -5,7 +5,7 @@ const DetailedBlog = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-20 w-full py-16 px-12 bg-[#f1f1f1]">
+      <div className="mt-20 w-full py-16 md:px-12 px-5 bg-[#f1f1f1]">
         <div className=" w-full bg-white">
           <div
             style={{
@@ -83,7 +83,7 @@ const DetailedBlog = () => {
             <h2 className=" font-Roboto text-2xl font-medium text-center text-[#11305A]">
               Leave a Comment
             </h2>
-            <div className=" w-[480px]">
+            <div className=" w-full md:w-[480px]">
               <label
                 htmlFor=""
                 className=" mt-3 flex flex-col w-full font-Roboto font-normal text-sm text-[#082F49B2]"
@@ -115,7 +115,7 @@ const DetailedBlog = () => {
           </div>
         </div>
 
-        <div className=" w-full grid grid-cols-3 gap-8 mt-16">
+        <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className=" w-full h-[300px] border border-[#0C77DC] rounded-lg flex flex-col items-center justify-center">
             <p className=" text-lg text-[#11305A] text-center font-LatoRegular font-semibold">
               Book Flights to anywhere in the world

@@ -47,16 +47,16 @@ const Services = () => {
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
-          className="h-[500px] relative w-full flex justify-center items-center flex-col"
+          className="h-[500px] relative w-full flex justify-center items-center flex-col px-5"
         >
           <h1 className=" font-LatoBold  font-extrabold text-[64px] text-white">
             Flygocom
           </h1>
-          <p className=" mt-3 text-[28px] font-LatoRegular font-medium text-white">
+          <p className=" mt-3 text-2xl md:text-[28px] text-center font-LatoRegular font-medium text-white">
             Get everything you need for your trip on Flygocom.
           </p>
         </div>
-        <div className=" w-full bg-white py-16 px-12">
+        <div className=" w-full bg-white py-16 md:px-12 px-5">
           <h2 className=" font-medium text-[#0C77DC] font-PoppinsMedium text-[28px]">
             About Us
           </h2>
@@ -75,8 +75,8 @@ const Services = () => {
           </p>
         </div>
 
-        <div className=" w-full px-12 py-10">
-          <div className=" w-full grid grid-cols-2 gap-10">
+        <div className=" w-full md:px-12 px-5 py-10">
+          <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className=" w-full bg-white p-10 border border-[#DCDDDEB2] rounded-lg flex flex-col items-center justify-center">
               <h2 className=" text-center text-[#0C77DC] font-PoppinsMedium font-medium text-[28px]">
                 Our Mission
@@ -124,7 +124,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className=" w-full bg-[#1F3E68] py-10 px-12">
+        <div className=" w-full bg-[#1F3E68] py-10 md:px-12 px-5">
           <h2 className=" font-PoppinsMedium font-medium text-[#FFFFFF] text-[28px]">
             Credentials
           </h2>
@@ -142,19 +142,19 @@ const Services = () => {
         </div>
       </div>
 
-      <div className=" w-full py-10 px-12 bg-[#f1f1f1]">
+      <div className=" w-full py-10 md:px-12 px-5 bg-[#f1f1f1]">
         <h2 className=" font-medium text-[#0C77DC] font-PoppinsMedium text-[28px]">
           Our Services
         </h2>
-        <div className=" w-full mt-4 flex items-start justify-between">
-          <div className=" w-[66%] flex flex-col space-y-6">
+        <div className=" w-full mt-4 flex flex-col lg:flex-row space-y-6 md:space-y-0 items-start justify-between">
+          <div className=" w-full lg:w-[66%] flex flex-col space-y-6">
             {service.map((item, index) => (
               <div
                 key={index}
-                className=" bg-white p-5 rounded-xl flex justify-between items-start"
+                className=" bg-white p-5 rounded-xl flex flex-col space-y-4 lg:space-y-0 lg:flex-row justify-between items-start"
               >
-                <div className=" bg-[#4773A0]  h-[218px] w-[30%]"></div>
-                <div className=" w-[68%]">
+                <div className=" bg-[#4773A0]  h-[218px] w-full lg:w-[30%]"></div>
+                <div className=" w-full lg:w-[68%]">
                   <h2 className=" text-[#11305A] font-medium font-Roboto text-2xl">
                     {item.name}
                   </h2>
@@ -162,14 +162,14 @@ const Services = () => {
                     {item.desc}
                   </p>
 
-                  <button className=" block ml-auto border border-[#0074C9] px-6 py-3 mt-5 rounded-lg font-LatoRegular font-semibold text-lg text-[#11305A]">
+                  <button className=" block w-full md:w-auto ml-auto border border-[#0074C9] px-6 py-3 mt-5 rounded-lg font-LatoRegular font-semibold text-lg text-[#11305A]">
                     Book now
                   </button>
                 </div>
               </div>
             ))}
           </div>
-          <div className=" w-[30%] bg-white h-full p-5 rounded-xl">
+          <div className=" w-full lg:w-[30%] bg-white h-full p-5 rounded-xl">
             <h2 className=" text-[#11305A] mb-5 font-Roboto font-medium text-2xl">
               Other Services
             </h2>

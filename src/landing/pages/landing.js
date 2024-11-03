@@ -38,7 +38,7 @@ const Landing = () => {
       <Navbar />
       <Hero />
       {/* Unlock Rewards */}
-      <div className=" w-full py-16 px-12 mt-44 flex flex-col items-center">
+      <div className=" w-full py-16 md:px-12 px-5 md:mt-44 mt-[550px] flex flex-col items-center">
         <div className=" flex items-center space-x-6">
           <img src={coupon} alt="coupon" className="" />
           <span className=" flex flex-col">
@@ -61,9 +61,9 @@ const Landing = () => {
 
                   backgroundSize: "cover",
                 }}
-                className=" bg-white h-[260px] rounded-[10px] shadow-sm"
+                className=" bg-white h-[100px] w-[250px] md:w-auto md:h-[260px] rounded-[10px] shadow-sm"
               >
-                <div className=" w-[80px] md:w-[230px] h-full relative">
+                <div className=" w-[150px] md:w-[230px] h-full relative">
                   <div className=" bottom-3 px-3 absolute w-full">
                     <button className=" w-full bg-[#01215E] rounded-[10px] py-3 font-Roboto font-normal text-base text-[#FFFFFF]">
                       {item.name}
@@ -77,16 +77,16 @@ const Landing = () => {
       </div>
       <Deals />
       {/* FREE POS & Tracking Solutions */}
-      <div className=" w-full py-16 px-12">
-        <div className=" w-full flex flex-row bg-[#f1f1f1] rounded-[16px] h-[380px]">
+      <div className=" w-full py-16 md:px-12 px-5">
+        <div className=" w-full flex flex-col md:flex-row bg-[#f1f1f1] rounded-[16px] md:h-[380px]">
           <div
             style={{
               backgroundImage: `url(${bus})`,
               backgroundSize: "cover",
             }}
-            className=" w-[50%] h-full rounded-l-[16px]"
+            className=" w-full h-[300px] md:w-[50%] md:h-full rounded-r-[16px] md:rounded-r-none rounded-l-[16px]"
           ></div>
-          <div className=" w-[50%] h-full flex flex-col items-center justify-center">
+          <div className=" w-full md:w-[50%] p-5 md:p-0 h-full flex flex-col items-center justify-center">
             <p className=" font-PoppinsBold font-bold text-[#11305A] text-[28px]">
               Transform your Bus Services with
             </p>
@@ -106,12 +106,12 @@ const Landing = () => {
         </div>
       </div>
       {/* Let’s Curate Your Experience */}
-      <div className="w-full py-16 px-12">
-        <p className=" text-center text-[#11305A] font-PoppinsBold font-bold text-[40px]">
+      <div className="w-full py-16 md:px-12 px-5">
+        <p className=" text-center text-[#11305A] font-PoppinsBold font-bold text-3xl md:text-[40px]">
           Let’s Curate Your Experience
         </p>
 
-        <div className="grid grid-cols-3 gap-5 w-full mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full mt-8">
           <div
             style={{
               backgroundImage: `url(${lag})`,
@@ -147,7 +147,7 @@ const Landing = () => {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
-              className=" w-full h-full bg-[#f1f1f1] rounded-[18px] relative"
+              className=" w-full h-[300px] md:h-full bg-[#f1f1f1] rounded-[18px] relative"
             >
               <button className=" absolute top-6 right-6 px-4 py-3 bg-white rounded-[6px] text-[#11305A] font-PoppinsSemiBold font-semibold text-base">
                 Paint and Sip
@@ -176,7 +176,7 @@ const Landing = () => {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
-              className=" w-full h-full bg-[#f1f1f1] rounded-[18px] relative"
+              className=" w-full h-[300px] md:h-full bg-[#f1f1f1] rounded-[18px] relative"
             >
               <button className=" absolute top-6 right-6 px-4 py-3 bg-white rounded-[6px] text-[#11305A] font-PoppinsSemiBold font-semibold text-base">
                 VR Games

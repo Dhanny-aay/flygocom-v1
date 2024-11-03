@@ -15,21 +15,13 @@ import loca from "./assets/loca.svg";
 const Footer = () => {
   return (
     <>
-      <div className=" w-full py-16 px-12 bg-[#1F3E68] h-[580px] relative">
-        <div
-          style={{
-            position: "absolute",
-            top: "-280px",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-          class="w-full px-12"
-        >
+      <div className=" w-full py-16 md:px-12 px-5 bg-[#1F3E68] md:h-[580px] relative">
+        <div class="w-full md:px-12 md:absolute md:top-[-280px] md:left-[50%] md:translate-x-[-50%]">
           {/* child component goes here  */}
-          <div className=" w-full bg-white py-12 rounded-xl  border border-[#EAEBF0] relative px-4 flex items-center justify-center space-x-8">
+          <div className=" w-full bg-white py-12 rounded-xl  border border-[#EAEBF0] relative px-4 flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-8 md:space-y-0">
             {/* component 1 */}
-            <div className="">
-              <p className="text-[#11305A] font-LatoBold font-bold text-[28px]">
+            <div className="  space-y-3 md:space-y-0">
+              <p className="text-[#11305A] font-LatoBold font-bold text-2xl md:text-[28px]">
                 Flygocom Mobile App{" "}
                 <span className=" block ">Coming Soon!</span>
               </p>
@@ -46,17 +38,17 @@ const Footer = () => {
               <p className=" text-[#11305A] font-LatoBold font-bold text-2xl">
                 Join the waitlist
               </p>
-              <p className=" mt-8 text-[#11305A] font-LatoRegular font-semibold text-lg">
+              <p className=" mt-3 md:mt-8 text-[#11305A] font-LatoRegular font-semibold text-lg">
                 Subscribe to our newsletter to join the waitlist and stay
                 <span className=" block">updated on the latest news.</span>
               </p>
-              <div className=" mt-6 flex items-center space-x-3">
+              <div className=" mt-6 flex flex-col md:flex-row items-center md:space-x-3 space-y-3 md:space-y-0">
                 <input
                   type="text"
-                  className=" py-5 w-[395px] border border-[#082F4980] px-3"
+                  className=" py-5 w-full md:w-[395px] border border-[#082F4980] px-3"
                   placeholder="Enter your email address"
                 />
-                <button className=" py-6 px-10 bg-[#F36F1A] font-Roboto font-semibold text-base text-white">
+                <button className=" w-full md:w-auto py-6 px-10 bg-[#F36F1A] font-Roboto font-semibold text-base text-white">
                   Sign up
                 </button>
               </div>
@@ -64,8 +56,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" absolute w-full bottom-0 left-0">
-          <div className=" pb-8 px-12 flex items-start space-x-36">
+        <div className=" md:absolute w-full bottom-0 left-0">
+          <div className=" pb-8 md:px-12 flex flex-col md:flex-row mt-12 md:mt-0 items-start md:space-x-36">
             <div className="">
               <p className=" text-[#D7F1FF] font-LatoBold font-bold text-2xl">
                 Flygocom Travel and Tours Limited
@@ -119,7 +111,7 @@ const Footer = () => {
                 <img src={ig} alt="" />
               </div>
             </div>
-            <div className="">
+            <div className=" mt-12 md:mt-0">
               <p className=" text-[#D7F1FF] font-LatoBold font-bold text-2xl">
                 Become a partner with Flygocom
               </p>

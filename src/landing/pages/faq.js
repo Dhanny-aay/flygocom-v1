@@ -27,7 +27,7 @@ const Faq = () => {
     <>
       <div className=" w-full bg-[#f1f1f1]">
         <Navbar />
-        <div className="mt-20 w-full py-16 px-12 bg-[#f1f1f1] min-h-[100vh]">
+        <div className="mt-20 w-full py-16 md:px-12 px-5 bg-[#f1f1f1] min-h-[100vh]">
           <div className=" flex items-center justify-between">
             <p></p>
             <div className=" flex flex-row space-x-4 ml-auto">

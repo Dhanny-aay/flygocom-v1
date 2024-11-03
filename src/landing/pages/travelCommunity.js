@@ -83,18 +83,18 @@ const TravelCommunity = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className=" h-[500px] relative w-full flex justify-center items-center flex-col"
+        className=" h-[600px] md:h-[500px] relative w-full flex justify-center items-center flex-col px-5"
       >
-        <div className=" mt-8 w-full rounded-xl max-w-[640px] py-5 bg-[#0000004D] flex-col items-center justify-center flex text-center">
-          <h1 className=" font-LatoBold leading-[48px] font-extrabold text-[40px] text-white">
+        <div className=" mt-8 w-full rounded-xl max-w-[640px]  py-5 px-3 md:px-0 bg-[#0000004D] flex-col items-center justify-center flex text-center">
+          <h1 className=" font-LatoBold md:leading-[48px] font-extrabold text-3xl md:text-[40px] text-white">
             Welcome to the Flygocom Travel Community
           </h1>
-          <p className=" mt-3 text-xl font-Roboto font-normal text-white md:max-w-[500px]">
+          <p className=" mt-3 text-base md:text-xl font-Roboto font-normal text-white md:max-w-[500px]">
             Explore the World Together—Travel with Groups or Create Your Own
             Adventures for Others to Join
           </p>
-          <div className=" flex items-center space-x-3">
-            <button className=" mt-3 flex items-center space-x-3 py-3 px-6 bg-[#1A8AF3] rounded-[12px] font-Roboto font-bold text-base text-white">
+          <div className=" flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-3">
+            <button className=" w-full md:w-auto mt-3 flex items-center space-x-3 py-3 px-6 bg-[#1A8AF3] rounded-[12px] font-Roboto font-bold text-base text-white">
               <p>Explore Communities</p>
               <img src={down} alt="" />
             </button>
@@ -102,7 +102,7 @@ const TravelCommunity = () => {
               onClick={() => {
                 setCreateGroup(true);
               }}
-              className=" mt-3 flex items-center py-3 px-6 bg-[#FFFFFF] rounded-[12px] font-Roboto font-bold text-base text-[#1A8AF3]"
+              className=" w-full md:w-auto mt-3 flex items-center py-3 px-6 bg-[#FFFFFF] rounded-[12px] font-Roboto font-bold text-base text-[#1A8AF3]"
             >
               <p>Create New Travel group</p>
             </button>
@@ -110,19 +110,19 @@ const TravelCommunity = () => {
         </div>
       </div>
       {/* Discover Weekly Deals*/}
-      <div className="w-full py-16 px-12 flex flex-col items-center">
-        <p className=" font-LatoBold font-bold text-black text-center text-[28px]">
+      <div className="w-full py-16 md:px-12 px-5 flex flex-col items-center">
+        <p className=" font-LatoBold font-bold text-black text-center text-2xl md:text-[28px]">
           Discover Weekly Deals on Travel Packages
         </p>
-        <p className=" font-Roboto font-normal text-base text-black mt-2">
+        <p className=" font-Roboto font-normal text-sm md:text-base text-black mt-2">
           Enjoy discounted trips and special offers
         </p>
 
-        <div className=" w-full mt-8 grid grid-cols-2 gap-6">
+        <div className=" w-full mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           {comms.map((item, index) => (
             <div
               key={index}
-              className=" bg-[#f5f5f5] flex gap-3 items-start justify-between w-full p-3"
+              className=" bg-[#f5f5f5] flex flex-col md:flex-row gap-3 items-start justify-between w-full p-3"
             >
               <div
                 style={{
@@ -130,9 +130,9 @@ const TravelCommunity = () => {
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
-                className=" w-1/2 h-[200px]"
+                className=" w-full md:w-1/2 h-[200px]"
               ></div>
-              <div className=" w-1/2">
+              <div className=" w-full md:w-1/2">
                 <p className=" text-[#11305A] font-LatoBold font-bold text-lg">
                   {item.name}
                 </p>
@@ -180,15 +180,15 @@ const TravelCommunity = () => {
       </div>
 
       {/* why choose us */}
-      <div className="w-full py-16 px-12 flex flex-col items-center">
+      <div className="w-full py-16 md:px-12 px-5 flex flex-col items-center">
         <p className=" font-LatoBold font-bold text-black text-center text-[28px]">
           Why Choose Us
         </p>
-        <p className=" font-Roboto font-normal text-base text-black mt-2">
+        <p className=" font-Roboto font-normal text-base text-black mt-2 text-center">
           Our legacy of excellence is a key reason why people choose us, but
           here are a few more.
         </p>
-        <div className=" w-full mt-8 grid grid-cols-3 gap-6">
+        <div className=" w-full mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           {choice.map((item, index) => (
             <div
               key={index}

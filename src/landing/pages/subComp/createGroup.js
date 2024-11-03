@@ -15,7 +15,7 @@ const CreateGroup = ({ setCreateGroup }) => {
         <div className="md:ml-[20%] h-[500px] bg-[#FFFFFF] p-6 rounded-[15px] w-full md:w-[600px]">
           <div className="w-full h-full bg-[#fff] overflow-auto">
             <span className=" w-full flex items-center justify-between">
-              <p className=" text-2xl text-[#272D37] font-bold mt-6 font-LatoBold">
+              <p className=" text-xl md:text-2xl text-[#272D37] font-bold mt-6 font-LatoBold">
                 Create New Travel Group
               </p>
               <img

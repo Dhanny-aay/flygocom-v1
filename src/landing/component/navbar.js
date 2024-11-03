@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" py-4 px-12 w-full flex items-center justify-between fixed top-0 left-0 z-50 bg-[#0000001a] backdrop-blur">
+      <div className=" py-4 md:px-12 px-5 w-full flex items-center justify-between fixed top-0 left-0 z-50 bg-[#0000001a] backdrop-blur">
         <div className=" flex items-center space-x-12">
-          <img src={logo} alt="" />
+          <img src={logo} className="" alt="" />
           <div className="hidden lg:flex flex-row space-x-6">
             <p className=" font-Roboto text-[#0C77DC] text-base font-semibold">
               Flights
@@ -79,7 +79,7 @@ const Navbar = () => {
             </span>
           </div>
         </div>
-        <div className=" flex items-center space-x-8">
+        <div className=" hidden md:flex items-center space-x-8">
           <span className=" relative flex flex-row space-x-2 items-center">
             <p
               className=" font-Roboto text-[#FFFFFF] text-base font-normal cursor-pointer"
@@ -120,6 +120,14 @@ const Navbar = () => {
           <button className=" block py-3 px-6 bg-[#0081FE] rounded-[5px] font-Roboto font-bold text-base text-white">
             Sign in
           </button>
+        </div>
+
+        <div className="menu-icon md:block lg:hidden">
+          <input className="menu-icon__cheeckbox" type="checkbox" />
+          <div>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </>
