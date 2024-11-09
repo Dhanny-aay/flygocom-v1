@@ -252,7 +252,7 @@ const FlightTab = () => {
             </span>
           )}
 
-          <button className=" py-4 px-5 rounded bg-gradient-to-b from-[#31C2FF] to-[#1989F2] shadow-sm font-Roboto font-semibold text-base text-white">
+          <button className=" py-3 px-5 rounded bg-gradient-to-b from-[#31C2FF] to-[#1989F2] shadow-sm font-Roboto font-semibold text-base text-white">
             Search
           </button>
         </div>

@@ -70,7 +70,7 @@ const StayTab = () => {
           <img src={calendar} className=" right-3 top-[12px] absolute" alt="" />
         </span>
 
-        <button className=" py-4 px-5 rounded bg-gradient-to-b from-[#31C2FF] to-[#1989F2] shadow-sm font-Roboto font-bold text-sm text-white">
+        <button className=" py-3 px-5 rounded bg-gradient-to-b from-[#31C2FF] to-[#1989F2] shadow-sm font-Roboto font-bold text-sm text-white">
           Search
         </button>
       </div>

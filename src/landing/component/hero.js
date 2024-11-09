@@ -41,7 +41,7 @@ const Hero = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className=" h-[600px] md:h-[500px] relative w-full flex justify-center items-center flex-col px-5"
+        className=" h-[500px] md:h-[500px] relative w-full flex justify-center items-center flex-col px-5"
       >
         <div className=" mt-8 w-full rounded-xl md:max-w-[640px] py-5 px-3 md:px-0 bg-[#0000004D] flex-col items-center justify-center flex text-center">
           <h1 className=" font-LatoBold  font-extrabold text-3xl md:text-[40px] text-white">
@@ -110,7 +110,7 @@ const Hero = () => {
       </div>
 
       {/* for mobile */}
-      <div class="w-full md:px-12 px-5 block md:hidden mt-6  md:absolute md:top-[425px] md:left-[50%] md:translate-x-[-50%]">
+      <div class="w-full md:px-12 px-5 block md:hidden -mt-20  md:absolute md:top-[425px] md:left-[50%] md:translate-x-[-50%]">
         {/* child component goes here  */}
         <div className=" w-full bg-white min-h-[257px] rounded-xl bg border border-[#EAEBF0] relative p-4 md:mt-0">
           <img src={comvex} className=" absolute right-0 z-10 top-0" alt="" />

@@ -2,7 +2,7 @@ import Deals from "../component/deals";
 import Hero from "../component/hero";
 import Navbar from "../component/navbar";
 import coupon from "./assets/coupon with gift box.svg";
-import serve1 from "./assets/serve1.svg";
+import serve1 from "./assets/serve1.png";
 import serve2 from "./assets/serve2.svg";
 import serve3 from "./assets/serve3.svg";
 import serve4 from "./assets/serve4.svg";
@@ -58,14 +58,13 @@ const Landing = () => {
                 key={index}
                 style={{
                   backgroundImage: `url(${item.img})`,
-
                   backgroundSize: "cover",
                 }}
-                className=" bg-white h-[150px] w-[250px] md:w-auto md:h-[260px] rounded-[10px] shadow-sm"
+                className=" bg-white h-[200px] w-[200px] md:w-auto bg- md:h-[260px] rounded-[10px] shadow-sm"
               >
-                <div className=" w-[150px] md:w-[230px] h-full relative">
+                <div className=" w-[200px] md:w-[230px] h-full relative">
                   <div className=" bottom-3 px-3 absolute w-full">
-                    <button className=" w-full bg-[#01215E] rounded-[10px] py-3 font-Roboto font-normal text-base text-[#FFFFFF]">
+                    <button className="w-full bg-[#01215E] rounded-[10px] py-3 md:py-3 font-Roboto font-normal text-xs md:text-base text-[#FFFFFF]">
                       {item.name}
                     </button>
                   </div>
@@ -86,13 +85,13 @@ const Landing = () => {
             }}
             className=" w-full h-[300px] md:w-[50%] md:h-full rounded-r-[16px] md:rounded-r-none rounded-l-[16px]"
           ></div>
-          <div className=" w-full md:w-[50%] p-5 md:p-0 h-full flex flex-col items-center justify-center">
-            <p className=" font-PoppinsBold font-bold text-[#11305A] text-[28px]">
+          <div className=" w-full md:w-[50%] p-5 md:p-0 h-full flex flex-col justify-center  md:px-12">
+            <h1 className=" font-PoppinsBold font-bold text-[#11305A] text-2xl text-center md:text-[28px]">
               Transform your Bus Services with
-            </p>
-            <button className=" bg-gradient-to-b from-[#37B3FF] to-[#0081FE] py-[10px] px-5 rounded-[10px] font-PoppinsBold font-bold text-2xl text-white mt-3">
+            </h1>
+            <p className="] font-PoppinsBold font-bold text-lg text-[#0081fe] text-center mt-2">
               FREE POS & Tracking Solutions
-            </button>
+            </p>
             <p className=" text-center mt-5 text-[#082F49B2] font-LatoRegular font-semibold text-lg">
               Enjoy effortless ticketing and real-time monitoring on
               <span className="md:block">
